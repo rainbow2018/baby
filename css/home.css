@@ -1,0 +1,108 @@
+*{margin: 0;padding: 0;;}
+@font-face {
+    font-family: icon;
+    src: url("../fonts/iconfont.ttf"),url("../fonts/iconfont.woff"),url("../fonts/iconfont.svg"),url("../fonts/iconfont.eot");
+}
+.clear:after{display: block;content: "";clear: both;}
+ul{list-style: none;}
+body{background: #EEEEEE;}
+/*搜索*/
+.search{width: 100%;height: 4rem;background: #FF8DC0;padding: .8rem 0 0 5%;}
+.search input{width: 82%;height: 2.5rem;display: block;background:rgba(255,255,255,.5);padding-left: 14%;line-height: 2.5rem;border-radius:2rem;position: relative;font-size: 1.2rem;float: left;margin-bottom: 0;border:none;color: #fff;}
+.magnifier{position: absolute;top: 1.1rem;left: 8%;width: 8%;}
+.scan{position: absolute;right: 21%;top:1.1rem;width: 8%;}
+.discuss{font-family: icon;font-size: 2.5rem;color: #fff;float: right;margin: .8rem 1.4rem 0 0;}
+/*拼团 直播*/
+.direct{width: 100%;height: 8rem;padding: 1.2rem 5% 1rem;background: #fff;}
+.direct a{display: block;width: 25%;float: left;;}
+.direct a img{display: block;margin: 0 auto;width: 70%;}
+.direct a h4{text-align: center;color: #000000;font-weight: lighter;margin-top: .5rem;}
+/*限量秒杀*/
+.kill{width: 100%;margin-top: .5rem;height: 18rem;}
+.kill .kill-left{padding-left: 1rem;display: block;width: 42%;height: 100%;padding-top: 1rem;background: #fff;margin-right: .2rem;float: left;}
+.kill .kill-left h2{color: #FE4A49;font-size: 1.5rem;}
+.kill .kill-left h3{color: #666666;font-weight: lighter;font-size: 1rem;}
+.kill .kill-left .index-time{margin-top: 1rem;}
+.kill .kill-left .index-time span{background: #444444;border-radius: .3rem;padding: .3rem;color: #fff;}
+.kill .kill-left .index-time em{font-style: normal;color: #444444;font-weight: bolder;}
+.kill .kill-left .limit-shopping{margin-top: 1rem;}
+.kill .kill-left .limit-shopping img{display: block;float: left;width: 45%;margin-top: 0;}
+.kill .kill-left .limit-shopping strong{display: block;float: left;width:50%;height: 4rem;background: #FF494B;text-align: center;border-radius: 50%;font-size: 1rem;color: #fff;padding: .8rem .5rem;line-height: 1.2rem;font-weight: lighter;margin-left: -.5rem;}
+.kill .killRight{float:left;width: 57%;height: 18rem;}
+.kill .kill-right{display: block;width: 100%;height:9.5rem;background: #fff;padding: 1rem 0 0 1rem;position: relative;margin-bottom: .2rem;}
+.kill .kill-right h2{color: #FFA94C;font-size: 1rem;}
+.kill .kill-right h3{color: #FFA94C;font-weight: lighter;font-size: .8rem;border: 1px solid #FFA94C;width: 55%;text-align: center;border-radius: 1rem;height: 1.5rem;line-height: 1.5rem;margin-top: .5rem;}
+.kill .kill-right .milk{position: absolute;width: 30%;right: 6%;top: 2.5rem;}
+.kill .kill-right .duck{position: absolute;width: 20%;left: 10%;top: 5.5rem;}
+.kill .killRight ul{width: 100%;height: 8.7rem;}
+.kill .killRight ul li{width: 32%;height: 100%; padding: 1rem 0 0 .2rem;background:#fff;float: left;}
+.kill .killRight ul li h2{font-size: 1rem;text-align: center;}
+.kill .killRight ul li h3{font-size: .8rem;text-align: center;color: #8A8A8A;margin-top: .5rem;font-weight: lighter;}
+.kill .killRight ul li img{display: block;margin: 0 auto;}
+.kill .killRight ul li:nth-child(1) img{width: 110%;margin-top: 1rem;}
+.kill .killRight ul li:nth-child(2) img{width: 40%;margin-top: .5rem;}
+.kill .killRight ul li:nth-child(3) img{width: 90%;margin-top: 1rem;}
+.kill .killRight ul li:first-child h2{color: #7BD9FB;}
+.kill .killRight ul li:nth-child(2) h2{color: #9B74DE;}
+.kill .killRight ul li:nth-child(3) h2{color: #FF4498;}
+.kill .killRight ul li:nth-child(2){margin: 0 .2rem;}
+.new-people{display: block;width: 100%;height:9rem;}
+.new-people img{width: 100%;}
+.vip{display: block;width: 100%;background: #FFD3DA;padding: .5rem 0;}
+.vip img{display: block;width: 90%;margin: 0 auto;}
+
+/*流行风尚*/
+.popular{width: 100%;background: #FFB0C3;height: 26rem;margin-top: -.3rem;}
+.popular h2{width: 100%;text-align: center;color: #fff;padding-top: 1.5rem;font-weight: 100;}
+.popular ul{width: 100%;padding: 1rem 2% 0 2%;}
+.popular ul li{width: 24%;margin: .2rem .5%;background: #fff;float: left;padding-top: .4rem;height: 9.5rem;border-radius: .5rem;}
+.popular ul li img{display: block;width: 85%;margin: 0 auto;}
+.popular ul li:nth-child(2) img{width: 100%;}
+.popular ul li:nth-child(3) img{width: 104%;}
+.popular ul li:nth-child(4) img{width: 104%;}
+.popular ul li:nth-child(5) img{width: 90%;}
+.popular ul li:nth-child(6) img{width: 65%;}
+.popular ul li:nth-child(7) img{width:65%;}
+.popular ul li:nth-child(8) img{width:65%;}
+.popular ul li h3{color: #F144FE;text-align: center;font-size: 1rem;}
+.popular ul li p{background: #F144FE;text-align: center;width: 95%;height: 2rem;line-height: 2rem; border-radius: 1rem;color: #fff;font-size: .8rem;margin: -.8rem auto 1rem auto;position: relative;}
+
+/*进口产品*/
+.import{width: 100%;height: 14.5rem; background: #FEAEF7;padding: 1rem .5rem 0 1rem;}
+.import a{width: 31%;display: block;float: left;background: #74BBF9;margin-right: .5rem;border-radius: .5rem;}
+.import a h3{color: #fff;font-size: 1rem;text-align: center;margin-top: 1rem;}
+.import a img{display: block;margin: 0 auto;width: 95%;margin: .8rem 0 0 .7rem;}
+.import a p{text-align: center;width: 95%;background: #1090FD;height: 2rem;line-height: 2rem;border-radius: 1rem;color: #fff;margin: 0 auto;font-size: .8rem;margin-bottom: .8rem;}
+
+/*宝宝姓名*/
+.baby{width: 100%;height:7.5rem;background: url(../images/index/baby_bj.png) no-repeat center/cover;margin: 0.5rem 0;}
+.baby img{width: 20%;display: block;float: left;margin: 1.2rem .5rem 0 1rem;}
+.baby .baby-name{float: left;padding-top: 1.5rem;}
+.baby .baby-name h4{font-size: 1.35rem;color: #585858;font-weight: light;line-height: 1.5rem;}
+.baby p{float: left;padding: 3rem 0 0 .5rem;color: #FF4298;font-size: 1rem;}
+/*直播购物*/
+.direct-shopping{width: 100%;height: 30.7rem;background: #9D74DE;padding-top: 1rem;}
+.direct-shopping h3{font-size: 1.25rem;color: #ccc;text-align: center;font-weight: lighter;}
+
+/*迪莎*/
+.clothes{width: 100%;}
+.clothes .ul-total{width: 100%;height: 28.6rem;background: #fff;margin: 0.5rem 0;}
+.clothes .ul-total .ul-head{clear: both;}
+.clothes .ul-total .ul-head img{width: 15%;display: block;float: left;margin: 1rem;}
+.clothes .ul-total .ul-head .ds{display: block;margin-top:2.2rem;float: left;font-size: 1.5rem;}
+.clothes .ul-total .ul-head .ds-text{float: left;font-size: 1rem;margin: 2.2rem 0 0 1rem;color: #A4A4A4;}
+.clothes .ul-total .ul-head em{font-family: icon;display: block;font-size: 1.5rem;float: right;margin:2rem 1rem 0 0;content: "";font-style: normal;color: #A4A4A4;}
+.clothes .ul-total ul{margin-top: 1rem;padding-left: .2rem;height: 18rem;}
+.clothes .ul-total ul li{width: 50%;float: left;}
+.clothes .ul-total ul li:first-child{border-right: 2px solid #E3E3E3;padding-right:.5rem;height: 14rem;}
+.clothes .ul-total ul li:nth-child(2) img{width:90%;}
+.clothes .ul-total ul li img{width: 95%;display: block;margin: 0 auto 1rem auto;}
+.clothes .ul-total ul li span{color: #FE4498;margin-right: .5rem;padding-left: .5rem;}
+.clothes .ul-total ul li small{color: #888888;text-decoration: line-through;}
+.clothes .ul-total ul li p{color: #010101;margin-top: .5rem;padding-left: .5rem;font-size: 1.2rem;}
+.clothes .ul-total .ds-discuss{width: 94%; margin: 0 auto;border-top: 2px solid #E3E3E3;padding-top: .6rem;}
+.clothes .ul-total .ds-discuss img:nth-child(2){margin-left: -1rem;}
+.clothes .ul-total .ds-discuss img:nth-child(3){margin-left: -1rem;}
+.clothes .ul-total .ds-discuss img:nth-child(4){margin-left: -1rem;}
+.clothes .ul-total .ds-discuss img:nth-child(5){margin-left: -1rem;}
+.clothes .ul-total .ds-discuss span{color: #898989;margin: -2.2rem 0 0 10rem;display: block;}

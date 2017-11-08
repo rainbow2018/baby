@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    	<meta name="format-detection" content="telephone=no"/>
+    	<meta name="apple-mobile-web-app-status-bar-style" content="">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/gwc.css" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+	</head>
+	<body id="gwc">
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">购物车</h1>
+		    <a href="gwc-edit.html" class="edit">编辑</a>
+		</header>
+		<div class="mui-content">
+		    <div class="gwc-sell clear">
+		    	<img src="images/gwc/gwc1.png" alt="" />
+		    	<div class="sell-right">
+		    		<h3>纸尿裤 M64（6-11KG）【4包装】</h3>
+		    		<p>通用,L</p>
+		    		<div class="gwc-price">
+		    			<strong>￥349</strong>
+		    			<span>￥360</span>
+		    			<small>*1</small>
+		    		</div>
+		    	</div>		    	
+		    </div>
+		    <div class="gwc-count">小计：<span>￥329</span></div>
+		    <div class="people-sell">	
+		    	<h3>大家还买了</h3>
+		    	<ul>
+		    		<li>
+		    			<img src="images/gwc/gwc1.png" alt="" />
+		    			<p>Merriea/花王  纸尿裤S54 （6-11KG）......</p>
+		    			<div class="people-price">
+		    				<span>￥329</span>
+		    				<em>1.0万人已团</em>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<img src="images/gwc/gwc2.png" alt="" />
+		    			<p>Merriea/花王  纸尿裤S54 （4-8KG）......</p>
+		    			<div class="people-price">
+		    				<span>￥59</span>
+		    				<em>1.3万人已团</em>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<img src="images/gwc/gwc1.png" alt="" />
+		    			<p>Merriea/花王  纸尿裤S54 （6-11KG）......</p>
+		    			<div class="people-price">
+		    				<span>￥329</span>
+		    				<em>1.0万人已团</em>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<img src="images/gwc/gwc2.png" alt="" />
+		    			<p>Merriea/花王  纸尿裤S54 （4-8KG）......</p>
+		    			<div class="people-price">
+		    				<span>￥59</span>
+		    				<em>1.3万人已团</em>
+		    			</div>
+		    		</li>
+		    	</ul>
+		    </div>
+			<div class="select">				
+				<div class="select-left clear">
+					<div class="checkbox cur"/></div>
+					<span>全选</span>
+				</div>
+				<div class="balance" id="balance">结算(1)</div>
+				<div class="count">
+					<h4>总计:￥349.00</h4>
+					<h5>立减:￥0.00</h5>
+				</div>				
+			</div>
+		</div>
+		<script src="js/castapp.js"></script>
+		<script>
+			document.getElementById("balance").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"balance.html",
+					id:"balance",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					
+				});
+			});	
+		</script>
+	</body>
+</html>

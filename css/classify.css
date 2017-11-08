@@ -1,0 +1,42 @@
+*{margin: 0;padding: 0;;}
+@font-face {
+    font-family: icon;
+    src: url("../fonts/iconfont.ttf"),url("../fonts/iconfont.woff"),url("../fonts/iconfont.svg"),url("../fonts/iconfont.eot");
+}
+.clear:after{display: block;content: "";clear: both;}
+ul{list-style: none;}
+a{text-decoration: none;}
+input{border: none;background: transparent;}
+body{background: #EEEEEE;}
+.classify-search{width: 100%;background: #fff;height: 2.5rem;padding-top: 1rem;}
+.classify-search input{width: 68%;margin: 0 auto;position: relative;border-radius: 1rem;border: 1px solid #D2D2D2;display: block;line-height: 2rem;height: 2rem;padding-left: 9%;}
+.classify-search strong{font-family: icon;display: block;content: "";color: #ccc;font-size: 1rem;position: absolute;top: 1.4rem;left: 2.8rem;font-size: 1.6rem;}
+.classify-search span{font-family: icon;display: block;content: "";color: #ccc;font-size: 1rem;position: absolute;top: 1.1rem;right: .7rem;font-size: 1.6rem;}
+
+/*分类 品牌*/
+.classify{width: 100%;}
+.classify .classify-head{width: 100%;height: 2.8rem;background: #fff;text-align: center;}
+.classify .classify-head span{cursor: pointer; line-height: 3rem;color: #000;margin:0 1rem;padding: 0 1rem .6rem 1rem;}
+.classify .classify-head span.cur{border-bottom: 2px solid #FF4498;color:#FF4498 ;}
+.classify .classify-main{width: 100%;margin-top: .5rem;}
+.classify .classify-main .classify-left{width: 25%;float: left;}
+.classify .classify-main .classify-left li.cur{background: #fff;}
+.classify .classify-main .classify-left li{cursor: pointer; width: 100%;height: 3rem;background: #F5F5F5;margin-bottom: 2px;line-height: 3rem;text-align: center;color: #000;}
+.classify .classify-main .classify-right{width: 75%;float:right;}
+.classify .classify-main .classify-right .classify-baby{background: #fff;}
+.classify .classify-main .classify-right .classify-baby h3{color: #888888;line-height: 3rem;margin-left: 1rem;font-weight: 300;font-size: 1rem;}
+.classify .classify-main .classify-right .classify-baby ul{display: flex;justify-content: space-between;align-content: center; width: 100%;flex-wrap: wrap;}
+.classify .classify-main .classify-right .classify-baby ul li{width: 33%;}
+.classify .classify-main .classify-right .classify-baby ul li img{width: 100%;display: block;margin:0 auto;}
+.classify .classify-main .classify-right .classify-baby ul li p{width: 100%;text-align: center;line-height: 3rem;font-size: .8rem;}
+.classify-main2{display: none;}
+.classify-main2 h4{color: #000;width: 100%;line-height: 1.5rem;padding-left: 5%;}
+.classify-main2 h3{text-align: center;width: 100%;color: #909090;font-size: 1rem;background: #fff;margin-bottom: 1px;height: 2rem;font-weight: 300;line-height: 2rem;}
+.classify-main2 .mui-table-view{width: 100%;height: 50rem;}
+.classify-main2 ul li{width: 100%;background: #fff;margin-bottom: 1px;height: 3rem;}
+.classify-main2 ul li img{width: 20%;margin-left: 2%;display: block;float: left;}
+.classify-main2 ul li span{color: #3B3B3B;display: block;float: left;line-height: 3rem;margin-left: 1rem;}
+.classify-main2 .ul li img{width: 13%;}
+.classify-main2 .letter{position: fixed;right: 5%;top:10rem;}
+.classify-main2 .letter span{display: block;font-size: .7rem;cursor: pointer;color: #FF4498;}
+.classify-main2 .letter .letter-text{position:absolute;right:2rem;top: 12rem;color: #fff;width: 2rem;height: 2rem;border-radius: 50%;background:#FF4498;text-align: center;line-height: 2rem;}

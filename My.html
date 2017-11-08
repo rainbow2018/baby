@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-3.2.1.min.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link href="css/My/My.css" rel="stylesheet"/>
+	    <script type="text/javascript">
+	    	
+	   		document.addEventListener('plusready', function(){
+	   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+	   			
+	   		});
+	   		
+	    </script>
+	</head>
+	<body>
+		<div class="mui-content">
+		    <div class="My-bj">
+		    	<div class="top">
+		    		<span id="sheZhi">&#xe61d;</span>
+		    		<span>&#xe622;</span>
+		    	</div>
+		    	<img src="img/My/logo.png" alt="" class="My-logo"/>
+		    	<h3>我的昵称</h3>
+		    	<div class="bom">
+		    		<strong id="dengLu">请登录</strong>
+		    		<strong id="zhuCe">请注册</strong>
+		    	</div>
+		    </div>
+		    <div class="dingDan-box">
+		    	 <div class="dingDan" id="dingDan">
+			    	<strong>我的订单</strong>
+			    	<strong>查看全部订单<span>&#xe6d7;</span></strong>
+			    </div>
+			    <ul class="daiFu">
+			    	<li id="daiFuKuan">
+			    		<img src="img/My/dingDan1.jpg" alt="" />
+			    		<span>待付款</span>
+			    	</li>
+			    	<li id="daiFaHuo">
+			    		<img src="img/My/dingDan2.jpg" alt="" />
+			    		<span>待发货</span>
+			    	</li>
+			    	<li id="daiShouHuo">
+			    		<img src="img/My/dingDan3.jpg" alt="" />
+			    		<span>待收货</span>
+			    	</li>
+			    	<li id="daiPingJia">
+			    		<img src="img/My/dingDan4.jpg" alt="" />
+			    		<span>待评价</span>
+			    	</li>
+			    	<li>
+			    		<img src="img/My/dingDan5.jpg" alt="" />
+			    		<span>退货/退款</span>
+			    	</li>
+			    </ul>
+		    </div>
+		   <div class="zhangHu">
+		   		<h3>我的账户</h3>
+		   		<ul>
+		   			<li>
+		   				<img src="img/My/icon1.png" alt="" />
+		   				<span>优惠券</span>
+		   			</li>
+		   			<li>
+		   				<img src="img/My/icon2.png" alt="" />
+		   				<span>余额</span>
+		   			</li>
+		   			<li>
+		   				<img src="img/My/icon3.png" alt="" />
+		   				<span>红包</span>
+		   			</li>
+		   			<li>
+		   				<img src="img/My/icon4.png" alt="" />
+		   				<span>会员</span>
+		   			</li>
+		   			<li>
+		   				<img src="img/My/icon5.png" alt="" />
+		   				<span>拼团</span>
+		   			</li>
+		   			<li>
+		   				<img src="img/My/icon6.png" alt="" />
+		   				<span>收藏</span>
+		   			</li>
+		   			<li>
+		   				<img src="img/My/icon7.png" alt="" />
+		   				<span>记录</span>
+		   			</li>
+		   			<li>
+		   				<img src="img/My/icon8.png" alt="" />
+		   				<span>kefu</span>
+		   			</li>
+		   		</ul>
+		   </div>
+		   <div class="reXiao">
+		   		<h3>今日热销</h3>
+		   		<ul>
+		   			<li>
+		    			<img src="img/fenLei/icon1.jpg" alt="" />
+		    			<p class="shangPin-tit">Merriea/花王  纸尿裤S54 （4-8KG）......</p>
+		    			<div>
+		    				<p>￥<span>59</span></p>
+		    				<p><span>1.3万</span>人已团</p>
+		    			</div>
+		    		</li>
+		   			<li>
+		    			<img src="img/fenLei/icon2.jpg" alt="" />
+		    			<p class="shangPin-tit">Merriea/花王  纸尿裤S54 （4-8KG）......</p>
+		    			<div>
+		    				<p>￥<span>59</span></p>
+		    				<p><span>1.3万</span>人已团</p>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<img src="img/fenLei/icon3.jpg" alt="" />
+		    			<p class="shangPin-tit">Merriea/花王  纸尿裤S54 （4-8KG）......</p>
+		    			<div>
+		    				<p>￥<span>59</span></p>
+		    				<p><span>1.3万</span>人已团</p>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<img src="img/fenLei/icon7.jpg" alt="" />
+		    			<p class="shangPin-tit">Merriea/花王  纸尿裤S54 （4-8KG）......</p>
+		    			<div>
+		    				<p>￥<span>59</span></p>
+		    				<p><span>1.3万</span>人已团</p>
+		    			</div>
+		    		</li>
+		   		</ul>
+		   </div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".My-bj .bom strong").click(function(){
+					$(this).addClass("cur").siblings().removeClass("cur");
+				})
+			});
+			document.getElementById("daiFuKuan").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"daiFuKuan.html",
+					id:"daiFuKuan2", 
+//						createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						daration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			}); 
+			document.getElementById("daiFaHuo").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"daiFaHuo.html",
+					id:"daiFaHuo2", 
+//						createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						daration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			});
+			document.getElementById("daiShouHuo").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"daiShouHuo.html",
+					id:"daiShouHuo2", 
+//						createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						daration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			});
+			document.getElementById("dingDan").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"dingDanQuanBu.html",
+					id:"dingDanQuanBu", 
+//						createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						daration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			});
+			document.getElementById("daiPingJia").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"daiPingJia.html",
+					id:"daiPingJia2",  
+//						createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						daration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			});
+			document.getElementById("sheZhi").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"setting.html",
+					id:"mui-fullscreen", 
+//						createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						daration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			});
+			document.getElementById("dengLu").addEventListener("tap",function(){
+					mui.openWindow({
+						url:"login.html",
+						id:"dengLu",
+//						createNew:true,
+						show:{
+							aniShow:"slide-in-right",
+							daration:200
+						},
+						waiting:{
+							title:"正在加载..."
+						}
+					});
+				});
+			document.getElementById("zhuCe").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"zhuCe.html",
+					id:"zhuCe2",
+//						createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						daration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

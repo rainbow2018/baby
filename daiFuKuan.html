@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-3.2.1.min.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link href="css/My/dingDanQuanBu.css" rel="stylesheet"/>
+	    <script type="text/javascript">
+	    	
+	   		document.addEventListener('plusready', function(){
+	   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+	   			
+	   		});
+	   		
+	    </script>
+	</head>
+	<body id="daiFuKuan2">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">购物车</h1>
+		</header>
+		<div class="mui-content">
+			<div class="dingDan-tit">
+				<a href="dingDanQuanBu.html">全部</a>
+				<a href="daiFuKuan.html" class="cur">待付款</a>
+				<a href="daiFaHuo.html">待发货</a>
+				<a href="daiShouHuo.html">待收货</a>
+				<a href="daiPingJia.html">待评价</a>
+			</div>
+			<form class="dingDan-shangPin">
+				<div class="shangJia clear">
+					<strong></strong>
+					<img src="img/fenLei/logo1.jpg" alt="" />
+					<span>Merriea/花王品牌专场</span>
+					<span>等待买家付款</span>
+				</div>
+				<div class="dingDan-shangPin-juTi clear">
+					<img src="img/gouWuChe/shangPin1.jpg" alt="" />
+					<ul>
+						<li>纸尿裤 M64（6-11KG）【4包装】</li>
+						<li>通用，<span>L</span></li>
+						<li>
+							<div>￥<span>329</span></div>
+							<div>￥<span>360</span></div>
+							<div>&#xe6a6;<span>1</span></div>
+						</li>
+					</ul>
+				</div>
+				<p>小计：<a>￥<span>329.00</span></a></p>
+				<div class="dingDan-bot">
+					<button>联系卖家</button>
+					<button>取消订单</button>
+					<button class="cur">付款</button>
+				</div>
+			</form>
+			<form class="dingDan-shangPin">
+				<div class="shangJia clear">
+					<strong></strong>
+					<img src="img/fenLei/logo1.jpg" alt="" />
+					<span>宜佳乐/YIJIALE专场</span>
+					<span>等待买家付款</span>
+				</div>
+				<div class="dingDan-shangPin-juTi clear">
+					<img src="images/index/mengwa.png" alt="" />
+					<ul>
+						<li>宜佳乐 200*180*1cm加厚儿童爬行垫…</li>
+						<li>双面A面大富翁+B面…</li>
+						<li>
+							<div>￥<span>26.9</span></div>
+							<div>￥<span>68</span></div>
+							<div>&#xe6a6;<span>1</span></div>
+						</li>
+					</ul>
+				</div>
+				<p>小计：<a>￥<span>0.00</span></a></p>
+				<div class="dingDan-bot">
+					<button>联系卖家</button>
+					<button>取消订单</button>
+					<button class="cur">付款</button>
+				</div>
+			</form>	
+			<ul class="daiFuKuan-bottom">
+				<li>
+					<span></span>
+					全选
+				</li>
+				<li>
+					<p>总计：￥<span>0.00</span></p>
+					<p>不含运费和进口税</p>
+				</li>
+				<li>合并付款</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var b=0;
+				var i=$(".dingDan-shangPin").length;
+				$(".shangJia strong").click(function(){
+					$(this).toggleClass("cur");
+					var a=$(this).attr("class");
+					var c=$(this).parent(".shangJia").siblings(".dingDan-shangPin-juTi").find("ul li:nth-of-type(3) div:nth-of-type(1) span").html();
+					if(a=="cur"){
+						b++;
+//						alert(c);
+						$(this).parent(".shangJia").siblings("p").find("a span").html(c);
+					}else if(a!="cur"){
+						b--;
+						$(this).parent(".shangJia").siblings("p").find("a span").html("0.00");
+					};
+					if(i==b){
+						$(".daiFuKuan-bottom li:first-of-type span").addClass("cur");
+					}
+					
+					if(i!=b){
+//						alert(b);
+//						b=0;
+						$(".daiFuKuan-bottom li:first-of-type span").removeClass("cur");
+					}
+				});
+				$(".daiFuKuan-bottom li:first-of-type span").click(function(){
+					$(this).toggleClass("cur");
+					var cur=$(this).attr("class");
+					if(cur=="cur"){
+						$(".shangJia strong").addClass("cur");
+					}else{
+						$(".shangJia strong").removeClass("cur");
+					}
+				});
+				var m=0;
+				var q=0;
+				for(var n=0;n<i;n++){
+					 q+=parseInt($(".dingDan-shangPin").eq(n).find("p a span").html());
+				}
+				$(".daiFuKuan-bottom li:nth-of-type(2) p:first-of-type span").html(q);
+			})
+		</script>
+	</body>
+</html>

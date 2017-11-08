@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="">
+    <title>首页</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/home.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <script src="js/resize.js"></script>
+</head>
+<body>
+	<div class="mui-content">
+	    <nav class="mui-bar mui-bar-tab" id="index">
+		    <a class="mui-tab-item mui-active" id="default" href="home.html">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item" href="classify.html">
+		        <span class="mui-icon mui-icon-phone"></span>
+		        <span class="mui-tab-label">分类</span>
+		    </a>
+		    <a class="mui-tab-item" href="gwc.html">
+		        <span class="mui-icon mui-icon-email"></span>
+		        <span class="mui-tab-label">购物车</span>
+		    </a>
+		    <a class="mui-tab-item" href="My.html">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+	</div>
+	<script src="js/castapp.js"></script>
+	<script>
+		function setStatusbarRed(){
+		
+				// 设置系统状态栏背景色为红色
+				
+				plus.navigator.setStatusBarBackground("#FF0000");
+			}
+		
+			document.addEventListener('plusready',function(){
+			
+				setStatusbarRed();
+			
+			},false);
+
+		
+		ca.init();
+		var pathArray=["home.html","classify.html","gwc.html","My.html"];
+		castapp.tabBar(pathArray);
+	</script>
+</body>
+</html>
